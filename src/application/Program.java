@@ -10,9 +10,11 @@ import model.entities.Seller;
 public class Program {
 
 	public static void main(String[] args) {
+		System.out.println("=== TEST 1: seller findById ===");
+		
 		SellerDao sellerDao = DaoFactory.createSellerDao();
-		Seller seller  = sellerDao.findByID(3);
-		 System.out.println(seller);
+		Seller seller = sellerDao.findByID(3);
+		System.out.println(seller);
 	}
 
 }
